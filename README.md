@@ -1,6 +1,6 @@
 # CUT&RUN Analysis Pipeline
 
-A modular shell-based pipeline for CUT&RUN (Cleavage Under Targets & Release Using Nuclease) data analysis, with E. coli spike-in normalization. Developed for paired-end Illumina sequencing data aligned to mm10 (mouse), adaptable to other genomes.
+A modular pipeline for CUT&RUN (Cleavage Under Targets & Release Using Nuclease) data analysis, with E. coli spike-in normalization. Developed for paired-end Illumina sequencing data aligned to mm10 (mouse), adaptable to other reference genomes.
 
 ## Experiment
 
@@ -164,7 +164,7 @@ Scale factors are computed as `min(spike_fraction) / sample_spike_fraction`, whe
 
 ## Conda Environment Architecture
 
-Two separate conda environments are used to avoid dependency conflicts on arm64 (Apple Silicon):
+Two separate conda environments are used to avoid dependency conflicts on arm64:
 
 - **CNR**: bowtie2, samtools, bedtools, picard, trim-galore, cutadapt, macs3, multiqc, openjdk 17
 - **DEEPTOOLS**: deeptools, samtools, bedtools
