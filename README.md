@@ -2,7 +2,7 @@
 
 A modular pipeline for CUT&RUN (Cleavage Under Targets & Release Using Nuclease) data analysis, with E. coli spike-in normalization. Developed for paired-end Illumina sequencing data aligned to mm10 (mouse), adaptable to other reference genomes.
 
-## Experiment Example
+## Experiment Example in Mice
 
 - **Assay**: CUT&RUN with E. coli K-12 MG1655 spike-in DNA
 - **Targets**: H3K27me3 (3 reps), H3K4me3 (2 reps), RARg (3 reps), RXRa (3 reps), IgG control (3 reps) — 14 samples total
