@@ -1,0 +1,39 @@
+{
+    "_comment": "CUT&RUN pipeline configuration. Edit paths below for your system.",
+
+    "project_dir": "/Users/helenhoxie/RARG_2026/CNR_HH7843",
+    "fastq_dir": "02_fastq",
+
+    "genome": {
+        "assembly": "mm10",
+        "bowtie2_index_mm10": "/Users/helenhoxie/data/genomes/GRCm38/4DN_Bowtie2Index/mm10_no_alt_analysis_set_ENCODE.fasta",
+        "bowtie2_index_ecoli": "/Users/helenhoxie/data/genomes/Escherichia_coli_K_12_MG1655/NCBI/2001-10-15/Sequence/Bowtie2Index/genome"
+    },
+
+    "tools": {
+        "homer_bin": "/Users/helenhoxie/Homer/bin",
+        "homer_cpp": "/Users/helenhoxie/Homer/cpp",
+        "seacr_script": "/Users/helenhoxie/HH7750_CNR/SEACR_1.3.sh"
+    },
+
+    "conda_envs": {
+        "alignment": "CNR",
+        "deeptools": "DEEPTOOLS"
+    },
+
+    "parameters": {
+        "bowtie2_max_insert": 700,
+        "mapq_threshold": 30,
+        "fragment_max_size": 1000,
+        "bigwig_bin_size": 10,
+        "trim_galore_cores": 4,
+        "seacr_mode": "non",
+        "seacr_threshold": "stringent"
+    },
+
+    "samples": {
+        "_comment": "Sample metadata. target must match the second field in filenames (e.g., WT_H3K27me3_1 -> target=H3K27me3). IgG samples are auto-detected as controls.",
+        "targets": ["H3K27me3", "H3K4me3", "RARg", "RXRa"],
+        "control": "IgG"
+    }
+}

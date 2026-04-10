@@ -1,0 +1,39 @@
+{
+    "_comment": "CUT&RUN pipeline configuration. Edit paths below for your system.",
+
+    "project_dir": "/path/to/your/project",
+    "fastq_dir": "02_fastq",
+
+    "genome": {
+        "assembly": "mm10",
+        "bowtie2_index_mm10": "/path/to/mm10/bowtie2/index_prefix",
+        "bowtie2_index_ecoli": "/path/to/ecoli_K12_MG1655/bowtie2/index_prefix"
+    },
+
+    "tools": {
+        "homer_bin": "/path/to/Homer/bin",
+        "homer_cpp": "/path/to/Homer/cpp",
+        "seacr_script": "/path/to/SEACR_1.3.sh"
+    },
+
+    "conda_envs": {
+        "alignment": "CNR",
+        "deeptools": "DEEPTOOLS"
+    },
+
+    "parameters": {
+        "bowtie2_max_insert": 700,
+        "mapq_threshold": 30,
+        "fragment_max_size": 1000,
+        "bigwig_bin_size": 10,
+        "trim_galore_cores": 4,
+        "seacr_mode": "non",
+        "seacr_threshold": "stringent"
+    },
+
+    "samples": {
+        "_comment": "Sample metadata. target must match the second field in filenames (e.g., WT_H3K27me3_1 -> target=H3K27me3). IgG samples are auto-detected as controls.",
+        "targets": ["H3K27me3", "H3K4me3", "RARg", "RXRa"],
+        "control": "IgG"
+    }
+}
