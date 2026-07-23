@@ -1,6 +1,6 @@
 # CUT&RUN Analysis Pipeline
 
-A modular pipeline for CUT&RUN (Cleavage Under Targets & Release Using Nuclease) data analysis, with E. coli spike-in normalization. Developed for paired-end Illumina sequencing data aligned to mm10 (mouse), adaptable to other reference genomes.
+A modular pipeline for CUT&RUN (Cleavage Under Targets & Release Using Nuclease) data analysis, with E. coli spike-in normalization. Developed for paired-end Illumina sequencing data aligned to mm10 (mouse), adaptable to other reference genomes, able to run on a laptop and by all Gudas Lab members.
 
 ## Experiment Example in Mice
 
